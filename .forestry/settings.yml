@@ -4,6 +4,11 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: directory
+  path: content
+  label: All Pages
+  create: all
+  match: "**/*"
 - type: document
   path: README.md
   label: README
@@ -29,11 +34,6 @@ sections:
   label: Contact
   create: none
   match: "*"
-- type: directory
-  path: content
-  label: All Pages
-  create: all
-  match: "**/*"
 - type: heading
   label: Configuration
 - type: document
